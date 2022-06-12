@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FabricJS Project</title>
+        <script defer src="https://unpkg.com/fabric@5.2.1/dist/fabric.min.js"></script>
+
+        <script defer type="text/javascript" src="./index.js"></script>
+        <script defer type="text/javascript" src="./services/helper.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+
+<body>
+        <canvas id="canvas" width="1000" height="500">
+
+        </canvas>
+        <div class="buttons">
+                <label for="inputTag" onclick="uploadImage()">
+                        <input id="inputTag" type="file" accept="image/png, image/jpg, image/jpeg" />
+                        <i style="font-size:2em;margin-right:10px;" class="fa fa-arrow-up"></i>
+                        <h3 id="buttonContent">Upload Image</h3>
+                </label>
+                <button onclick="clearCanvas()" id="clearBtn">
+                        <i style="font-size:2em;margin-right:10px;color:aliceblue;" class="fa fa-minus-circle"></i>
+                        <h4>Clear</h4>
+                </button>
+        </div>
+</body>
+
+</html>
