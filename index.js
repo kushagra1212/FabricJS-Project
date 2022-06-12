@@ -102,6 +102,7 @@ const disableClearButton = function () {
       originX: "center",
       originY: "center",
       opacity: 0.5,
+      selectable: false,
     })
   );
   canvas.setViewportTransform([1, 0, 0, 1, 0, 0]);
